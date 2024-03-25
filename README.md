@@ -207,3 +207,151 @@ Um inteiro representando a quantidade de dinheiro que Jota Marcelinho entrou na 
 ```
 
 
+## Padrões II
+
+Considere a seguinte sequência de imagens:
+
+![Padrões](https://github.com/Naliat/EstruturaDeDadosUFC/blob/main/Padr%C3%B5es2.jpeg)
+
+Cada imagem na sequência é formada por um número de peças (uma peça pode ser um quadrado ou triângulo).
+
+A tabela seguinte apresenta uma relação entre a ordem da imagem na sequência e o número total de peças utilizadas:
+
+| ordem | 1 | 2 | 3 |
+|-------|---|---|---|
+| número de peças | 3 | 8 | 15 |
+
+Faça um programa que recebe um inteiro n e devolve o número total de peças da n-ésima imagem da sequência.
+
+**Entrada**
+
+A entrada é composta por uma única linha contendo um inteiro n representando a posição de um padrão na sequência.
+
+**Saída**
+
+A saída é composta por uma única linha contendo o total de peças da n-ésima imagem da sequência.
+
+**Exemplo de Entrada**
+```
+3
+```
+**Exemplo de Saída**
+```
+15
+```
+
+
+
+## Fibonacci I
+
+Uma relação de recorrência é uma forma de definir os termos de uma sequência em relação aos valores dos termos anteriores. No caso dos coelhos de Fibonacci, qualquer mês conterá os coelhos que estavam vivos no mês anterior além de sua nova prole. Uma observação importante é que o número de descendentes em qualquer mês é igual ao número de coelhos que estavam vivos dois meses antes.
+
+![Fibonacci](https://github.com/Naliat/EstruturaDeDadosUFC/blob/main/FibonacciRabbits1.jpg)
+
+
+
+### Fibonacci
+
+Como resultado, se Fn representa o número de pares de coelhos vivos após o n-ésimo mês, então obtemos a sequência de Fibonacci com termos que são definidos pela relação de recorrência Fn = Fn−1 + Fn−2 (com F1=F2=1 para iniciar a sequência). Embora a sequência tenha o nome de Fibonacci, ela era conhecida pelos matemáticos indianos há mais de dois milênios.
+
+Faça um programa que calcula o número total de pares de coelhos que estarão presentes após n meses, se começarmos com 1 par e em cada geração, cada par de coelhos em idade reprodutiva produz uma ninhada de k pares de coelhos (em vez de apenas 1 par).
+
+**Entrada**
+
+A entrada é composta por uma única linha contendo dois inteiros (1 ≤ n ≤ 10) e (1 ≤ k ≤ 10)
+
+**Saída**
+
+A saída é composta por uma única linha contendo o número total de pares de coelhos que estão presentes após n meses, se começarmos com 1 par e em cada geração, cada par de coelhos em idade reprodutiva produz uma ninhada de k pares de coelhos.
+
+**Exemplo de Entrada**
+```
+5 3
+```
+**Exemplo de Saida**
+```
+19
+```
+
+
+
+## Quadrado
+
+Aragão está profundamente envolvido em seu aprendizado sobre recursão. Recentemente, ele fez uma descoberta fascinante: o cálculo de n² pode ser expresso de maneira recursiva por meio da seguinte fórmula iterativa: (n + 1)² = n² + 2n + 1, começando com 1² = 1 como caso base.
+
+Empolgado com essa revelação, Aragão deseja desenvolver um algoritmo recursivo que não apenas calcule n², mas também mostre cada passo do processo. No entanto, ele enfrenta algumas dificuldades para elaborar tal algoritmo. É aí que entra a sua ajuda.
+
+**Entrada**
+
+A entrada é composta por uma única linha contendo um inteiro n.
+
+**Saída**
+
+A saída é composta por várias linhas mostrando o passo-a-passo do algoritmo recursivo.
+
+**Exemplo de Entrada**
+
+```
+10
+```
+
+**Exemplo de Saída**
+```
+10^2 = 9^2 + 29 + 1 = ?
+9^2 = 8^2 + 28 + 1 = ?
+8^2 = 7^2 + 27 + 1 = ?
+7^2 = 6^2 + 26 + 1 = ?
+6^2 = 5^2 + 25 + 1 = ?
+5^2 = 4^2 + 24 + 1 = ?
+4^2 = 3^2 + 23 + 1 = ?
+3^2 = 2^2 + 22 + 1 = ?
+2^2 = 1^2 + 21 + 1 = ?
+1^2 = 1
+2^2 = 1^2 + 21 + 1 = 4
+3^2 = 2^2 + 22 + 1 = 9
+4^2 = 3^2 + 23 + 1 = 16
+5^2 = 4^2 + 24 + 1 = 25
+6^2 = 5^2 + 25 + 1 = 36
+7^2 = 6^2 + 26 + 1 = 49
+8^2 = 7^2 + 27 + 1 = 64
+9^2 = 8^2 + 28 + 1 = 81
+10^2 = 9^2 + 29 + 1 = 100
+```
+
+
+## Fibonacci II
+
+Suponha agora os nossos coelhos não vivam para sempre e morrem depois de 3 meses. Contudo, os coelhos acasalam com um mês de idade e cada fêmea produz um novo par de coelhos a cada mês a partir do segundo mês.
+
+***Fibonacci***
+
+A imagem mostra que ao final de seis meses teremos apenas 4 pares de coelhos considerando que os coelhos morrem após 3 meses. Quantos pares de coelhos teremos ao final de n meses?
+
+Desenvolva uma função recursiva f(n) que devolve o número de pares de coelhos após n meses considerando que os coelhos morrem depois de 3 meses.
+
+**Entrada**
+
+A entrada é composta por uma única linha contendo um único inteiro (1 ≤ n ≤ 40).
+
+**Saída**
+
+A saída é composta por uma única linha contendo o número total de pares de coelhos que estão presentes após n meses, se começarmos com 1 par e em cada geração, cada par de coelhos em idade reprodutiva produz um par de coelhos e eles morrem depois de 3 meses.
+
+**Exemplo de Entrada**
+```
+6
+```
+**Exemplo de Saída**
+```
+4
+```
+**Exemplo de Entrada**
+```
+40
+```
+**Exemplo de Saída**
+```
+55405
+```
+
+
