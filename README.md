@@ -72,3 +72,86 @@ void printTower(char * s){
 }
 ```
 
+
+
+## Coeficientes Binomiais
+
+Os coeficientes binomiais são muito importantes para a resolução de vários problemas de contagem. Por exemplo,
+
+C(n,k) representa o número de maneiras de escolher k elementos de um conjunto de n elementos.
+
+C(n + k - 1,k) representa o número de maneiras de escolher k elementos de um conjunto de n elementos se repetições são permitidas.
+
+Os coeficientes binomiais podem ser definidos usando a seguinte recursão:
+
+![Descrição da imagem](https://github.com/Naliat/EstruturaDeDadosUFC/blob/main/Coeficientes%20Binomias%20formula.jpeg)
+
+
+Sua tarefa é dado dois inteiros n e k, calcula C(n,k).
+
+**Entrada**
+
+A primeira linha contendo dois inteiros n e k.
+
+**Saída**
+
+Imprima uma linha contendo C(n,k).
+
+
+**Exemplo de Entrada**
+```
+8 4
+```
+**Exemplo de Saída**
+```
+70
+```
+
+
+
+## Imprimindo Diagonal
+
+Faça um programa que recebe uma palavra com até 100 caracteres e imprime a palavra em diagonal.
+
+## Entrada
+
+A entrada é composta por uma única linha contendo uma palavra com até 100 caracteres.
+
+## Saída
+
+A saída é composta por n linhas, sendo n o tamanho da palavra lida.
+
+## Exemplo de Entrada
+```
+tailan
+```
+## Exemplo de Saída
+
+```
+t
+ a
+  i
+   l
+    a
+     n
+```
+
+## Dica:
+
+```cpp
+void diagonal(char * s, int k){
+    if(*s == '\0'){
+        return;
+    }else{
+        // Imprima k caracteres de espaço em branco
+        // Imprima o primeiro caractere de s e pule a linha
+        // Faça a chamada recursiva com o próximo caractere e incrementa k
+    }
+}
+```
+
+
+
+
+
+
