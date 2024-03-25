@@ -107,25 +107,23 @@ Imprima uma linha contendo C(n,k).
 70
 ```
 
-
-
 ## Imprimindo Diagonal
 
 Faça um programa que recebe uma palavra com até 100 caracteres e imprime a palavra em diagonal.
 
-## Entrada
+**Entrada**
 
 A entrada é composta por uma única linha contendo uma palavra com até 100 caracteres.
 
-## Saída
+**Saída**
 
 A saída é composta por n linhas, sendo n o tamanho da palavra lida.
 
-## Exemplo de Entrada
+**Exemplo de Entrada**
 ```
 tailan
 ```
-## Exemplo de Saída
+**Exemplo de Saída**
 
 ```
 t
@@ -136,7 +134,7 @@ t
      n
 ```
 
-## Dica:
+**Dica:**
 
 ```cpp
 void diagonal(char * s, int k){
@@ -149,9 +147,3 @@ void diagonal(char * s, int k){
     }
 }
 ```
-
-
-
-
-
-
